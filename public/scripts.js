@@ -1,5 +1,7 @@
 async function windowActions() {
-const request = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
-meals = await request.json();
+const request = await fetch('/api/DiningHall');
+dininghall = await request.json();
+console.log('window loaded');
+console.log(dininghall)
 }
 window.onload = windowActions;
