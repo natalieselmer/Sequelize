@@ -1,7 +1,6 @@
 async function windowActions() {
-const request = await fetch('/api/DiningHall');
+const request = await fetch('/api/dining');
 dininghall = await request.json();
-console.log('window loaded');
-console.log(dininghall)
+console.log(dining)
 }
 window.onload = windowActions;
